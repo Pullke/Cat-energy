@@ -8,7 +8,7 @@
 
     <title>Cat Energy</title>
   </head>
-  
+
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" id="page-header__logo">
@@ -19,14 +19,14 @@
         <button class="main-nav___toggle" type="button">
           <span>Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-nav__item site-nav__item--current">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
             <a>Главная</a>
           </li>
-          <li class="site-nav__item">
+          <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-nav__item">
+          <li class="main-nav__item">
             <a href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -34,7 +34,7 @@
     </header>
 
     <main class="page-main">
-      <h1>Интернет-магазин «Cat energy»</h1>
+      <h1 class="visually-hidden">Интернет-магазин «Cat energy»</h1>
 
       <section class="promo">
         <div class="wrapper">
@@ -50,27 +50,27 @@
           <h2 class="visually-hiden">Программы</h2>
           <ul class="programs__list">
             <li class="programs__item">
-              <article class="programs__article">
-                <h3 class="article__title">Похудение</h3>
-                <p class="article__text">
+              <article class="programs-article">
+                <h3 class="programs-article__title">Похудение</h3>
+                <p class="programs-article__text">
                   Ваш кот весит больше собаки и почти утратил
                   способность лазить по деревьям? Пора на диету!
                   Cat Energy Slim поможет вашему питомцу
                   сбросить лишний вес.
                 </p>
-                <a class="article__link" href="catalog.html">Каталог slim</a>
+                <a class="programs-article__link" href="catalog.html">Каталог slim</a>
               </article>
             </li>
             <li class="programs__item">
-              <article class="programs__article">
-                <h3 class="article__title">Набор массы</h3>
-                <p class="article__text">
+              <article class="programs-article">
+                <h3 class="programs-article__title">Набор массы</h3>
+                <p class="programs-article__text">
                   Заработать авторитет среди дворовых котов
                   и даже собак? Серия Cat Energy Pro поможет
                   вашему коту нарастить необходимые
                   мышцы!
                 </p>
-                <a class="article__link" href="catalog.html">Каталог slim</a>
+                <a class="programs-article__link" href="catalog.html">Каталог slim</a>
               </article>
             </li>
           </ul>
@@ -79,7 +79,7 @@
 
       <section class="how-it-works">
         <div class="wrapper">
-          <h2 class="box-title">Как это работает</h2>
+          <h2 class="how-it-works__title">Как это работает</h2>
           <ul class="how-it-works__list">
             <li class="how-it-works__item">
               <p class="how-it-works__text">
@@ -115,13 +115,13 @@
 
       <section class="instance">
         <div class="wrapper">
-          <h2 class="box-title">Живой пример</h2>
+          <h2 class="instance__title">Живой пример</h2>
           <p class="instance__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
             по-прежнему спит по 16 часов в день.
           </p>
-          <dl class="instance__module">
+          <dl class="instance__description-list">
             <dt class="instance__term">5 кг</dt>
             <dd class="instance__description">снижение веса</dd>
             <dt class="instance__term">60 дней</dt>
@@ -132,11 +132,11 @@
             15 000 руб.
           </p>
 
-          <div class="instance__range">
+          <div class="instance-range">
             Было
-            <div class="range__control">
-              <div class="range__scale"></div>
-              <div class="range__toggle"></div>
+            <div class="instance-range__control">
+              <div class="instance-range__scale"></div>
+              <div class="instance-range__toggle"></div>
             </div>
             Стало
           </div>
@@ -146,14 +146,14 @@
 
     <footer class="main-footer">
       <div class="wrapper">
-        <section class="main-footer__map">
-          <div class="map__headline wrapper">
+        <section class="main-footer__map map">
+          <div class="map-headline">
             <h2 class="visually-hidden">Карта</h2>
-            <p class="headline__invitation">
+            <p class="map-headline__invitation">
               Приглашаем
               к сотрудничеству дилеров!
             </p>
-            <p class="headline__adress">
+            <p class="map-headline__adress">
               ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург
@@ -161,39 +161,40 @@
           </div>
           <img src="http://dummyimage.com/280x270/c0c0c0" alt="">
         </section>
+
         <section class="main-footer__bottomline">
           <div class="wrapper">
             <h2 class="visually-hidden">Контакты</h2>
-            <a href="#page-header__logo" class="footer-logo">
+            <a class="main-footer__logo" href="#page-header__logo">
               <img src="img/logo/footer-logo.svg" width="128" height="24" alt="Логотип «Cat energy»">
             </a>
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="" class="social__link social__link--vkontakte">
+            <ul class="main-footer__social-list social-list">
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link--vkontakte">
                   <span>ВКонтакте</span>
-                  <svg class="social__icon social__icon--vkontakte" width="30" height="22">
+                  <svg class="social-list__icon social-list__icon--vkontakte" width="30" height="22">
                     <use xlink:href="img/icons/icon_vkontakte.svg"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--instagram">
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link--instagram">
                   <span>Инстаграм</span>
-                  <svg class="social__icon social__icon--instagram" width="23" height="23">
+                  <svg class="social-list__icon social-list__icon--instagram" width="23" height="23">
                     <use xlink:href="img/icons/icon_instagram.svg"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a href="" class="social__link social__link--facebook">
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link--facebook">
                   <span>ВКонтакте</span>
-                  <svg class="social__icon social__icon--facebook" width="28" height="33">
+                  <svg class="social-list__icon social-list__icon--facebook" width="28" height="33">
                     <use xlink:href="img/icons/icon_facebook.svg"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-            <p class="copyright">
+            <p class="main-footer__copyright">
               HTML Academy
             </p>
           </div>
