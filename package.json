@@ -1,5 +1,5 @@
 {
-  "name": "projectname",
+  "name": "cat-energy",
   "private": true,
   "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
