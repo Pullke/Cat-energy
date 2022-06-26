@@ -1,0 +1,42 @@
+// Instance-range
+
+.instance-range {
+  position: relative;
+  display: flex;
+}
+
+.instance-range__img--before {
+  z-index: 1;
+}
+
+.instance-range__img--after {
+  position: absolute;
+  z-index: 0;
+}
+
+.instance-range__slider {
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.instance-range__control {
+  display: flex;
+  align-self: center;
+  width: 84px;
+  height: 14px;
+  margin: 0 10px;
+  background-color: @basic_white;
+  border: 1px solid @special_gray;
+  border-radius: 6px;
+}
+
+.instance-range__scale {
+  align-self: center;
+  margin: 0 6px;
+  width: 35px;
+  height: 6px;
+  background-color: @basic_green;
+  border-radius: 6px;
+}
