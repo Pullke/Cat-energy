@@ -23,9 +23,9 @@
     "start": "gulp"
   },
   "browserslist": [
-    "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -36,6 +36,6 @@
     "source/less/**/*.less"
   ],
   "engines": {
-    "node": "14.15.0"
+    "node": "17.3.1"
   }
 }
