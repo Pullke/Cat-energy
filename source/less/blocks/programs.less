@@ -15,9 +15,38 @@
 }
 
 .programs__caption {
-  text-align: center;
+  display: flex;
+  align-items: center;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  &--weight-loss::before {
+    padding-right: 20px;
+    content: url("../img/icons/cat_weight-loss.svg");
+  }
+
+  &--gain-weight::before {
+    padding-right: 20px;
+    content: url("../img/icons/cat_gain-weight.svg");
+  }
+}
+
+.programs__text {
+  padding-bottom: 23px;
+  font-family: "Arial", sans-serif;
+  color: @special_dark-grey;
+  border-bottom: 1px solid @special_gray-3;
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: @basic_black;
+
+  &::after {
+    padding-left: 25px;
+    content: url("../img/icons/icon_arrow.svg");
+  }
 }

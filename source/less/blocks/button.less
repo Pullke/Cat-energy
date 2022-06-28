@@ -4,7 +4,15 @@
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
-  background-color: @corporate_color;
+  background-color: @basic_green;
   color: @basic_white;
   border: inherit;
+
+  &:hover {
+    background-color: @basic_green-2;
+  }
+
+  &:active {
+    color: fade(@basic_white, 30%);
+  }
 }
