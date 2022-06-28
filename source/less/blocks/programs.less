@@ -1,29 +1,35 @@
 // Programs
 
 .programs {
+  width: 320px;
   padding-top: 20px;
 }
 
 .programs__list {
-  display: grid;
-  gap: 20px;
+  margin: 0;
+  // display: grid;
+  // gap: 20px;
 }
 
 .programs__item {
+  margin-bottom: 20px;
   padding: 20px;
-  background-color: @basic_gray;
+  background-color: @basic_grey;
 }
 
 .programs__caption {
   display: flex;
-  align-items: center;
+  // align-items: center;
+  margin: 0;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
 
   &--weight-loss::before {
+    display: block;
     padding-right: 20px;
+    margin-bottom: 0;
     content: url("../img/icons/cat_weight-loss.svg");
   }
 
@@ -34,10 +40,11 @@
 }
 
 .programs__text {
+  margin: 0;
   padding-bottom: 23px;
   font-family: "Arial", sans-serif;
   color: @special_dark-grey;
-  border-bottom: 1px solid @special_gray-3;
+  border-bottom: 1px solid @special_grey-3;
 }
 
 .programs__link {
