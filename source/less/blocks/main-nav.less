@@ -8,6 +8,7 @@
 
 .main-nav__list {
   text-align: center;
+  height: 80px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -18,15 +19,6 @@
   }
 }
 
-.main-nav__item--current {
-  cursor: default;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 7px;
-    border-bottom: 2px solid @basic_green;
-  }
-}
-
 .main-nav__link {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -34,9 +26,26 @@
   font-size: 20px;
   line-height: 20px;
 
+  &:hover:not(&--current) {
+    color: fade(@basic_black, 60%);
+  }
+
+  &:active:not(&--current) {
+    color: fade(@basic_black, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+  }
+}
+
+.main-nav__link--current {
+  cursor: default;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 7px;
+    border-bottom: 2px solid @basic_green;
   }
 }

@@ -3,11 +3,21 @@
 .wrapper {
   margin: auto;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .wrapper__promo {
   display: grid;
   justify-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-items: start;
+    padding-left: 117px;
+    // grid-template-columns: min-content;
+  }
 }
 
 .wrapper__instance {
