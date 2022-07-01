@@ -1,6 +1,10 @@
 // Main-footer
 
 .main-footer {
-  background-color: @basic_grey;
-  padding-top: 28px;
+  display: grid;
+  background-color: @basic_white;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic_grey;
+  }
 }
