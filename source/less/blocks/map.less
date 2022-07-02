@@ -1,9 +1,26 @@
 // Map
 
+.map {
+  @media (min-width:@tablet-width) {
+    background-color: @basic_white;
+  }
+}
+
+.map {
+  @media (min-width:@desktop-width) {
+    background-color: @basic_grey;
+  }
+}
+
 .map__headline {
   display: flex;
   justify-content: center;
-  padding: 28px 0;
+  align-items: center;
+  width: 320px;
+
+  @media (min-width:@desktop-width) {
+    background-color: @basic_white;
+  }
 }
 
 .map__invitation {
