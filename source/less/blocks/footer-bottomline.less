@@ -2,6 +2,9 @@
 
 .footer-bottomline {
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -11,15 +14,26 @@
 }
 
 .footer-bottomline__logo {
-  padding-bottom: 30px;
   width: 128px;
-  height: 24px;
+  margin-bottom: 30px;
 }
 
 .footer-bottomline__copyright {
-  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
 }
 
-.footer-bottomline__copyright a {
+.footer-bottomline__copyright-link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: @special_dark-grey;
   text-transform: none;
+}
+
+.footer-bottomline__copyright-link-logo {
+  width: 27px;
+  height: 34px;
 }
