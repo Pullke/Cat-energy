@@ -9,6 +9,10 @@
     padding: 0;
     margin-left: 95px;
   }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .main-nav__toggle {
@@ -96,15 +100,14 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     flex-grow: 1;
-    gap: 33px;
+    gap: 35px;
   }
 
   @media (min-width: @desktop-width) {
     flex-grow: 0.3;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
 
