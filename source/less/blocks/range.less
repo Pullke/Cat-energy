@@ -1,25 +1,36 @@
-// Instance-range
+// Range
 
-.instance-range {
+.range {
   display: flex;
   flex-direction: column;
 }
 
-.instance-range__img--before {
+.range__img-box {
+  box-sizing: border-box;
+  position: relative;
+  width: 267px;
+  min-height: 240px;
+  margin: 40px auto 0;
+}
+
+.range__img--before {
+  position: absolute;
   z-index: 1;
 }
 
-.instance-range__img--after {
+.range__img--after {
   position: absolute;
   z-index: 0;
 }
 
-.instance-range__slider {
+.range__slider {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 45px;
+  // padding: 0 45px;
+  width: 228px;
   height: 40px;
+  margin: auto;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -30,11 +41,11 @@
   }
 }
 
-.instance-range__control {
+.range__control {
   display: flex;
 }
 
-.instance-range__scale {
+.range__scale {
   display: flex;
   min-width: 84px;
   height: 14px;
@@ -51,7 +62,7 @@
   }
 }
 
-.instance-range__toggle {
+.range__toggle {
   align-self: center;
   margin: 0 6px;
   width: 35px;

@@ -11,45 +11,52 @@
 
   <body class="page__body">
     <header class="page-header">
-      <p class="page-header__logo-box">
-        <a class="page-header__logo--1 link" id="page-header__logo">
-          <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип «Cat energy»">
-        </a>
-        <a class="page-header__logo--2 link">
-          <img src="img/logo/footer-logo.svg" width="101" height="18" alt="">
-        </a>
-      <nav class="page-header__main-nav main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">
+      <nav class="main-navigation main-navigation--closed">
+        <div class="main-navigation__logo">
+          <a class="logo logo__icon-link" id="logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="logo__img" src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип «Cat energy»">
+            </picture>
+          </a>
+          <a class="logo logo__text-link">
+            <img src="img/logo/footer-logo.svg" width="101" height="18" alt="">
+          </a>
+        </div>
+        <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link link main-nav__link--current">Главная</a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a class="main-navigation__link link main-navigation__link--current">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link link" href="form.html">Подбор программы</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page__main">
       <h1 class="visually-hidden">Интернет-магазин «Cat energy»</h1>
 
       <section class="promo">
-        <div class="wrapper wrapper__promo">
+        <div class="promo__box">
           <h2 class="promo__title title">Функциональное питание для котов</h2>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-          <div class="promo__img"></div>
-          <!-- <img class="promo__img" src="img/index-promo-mobile.png" width="280" height="270" alt="Баночка с кормом"> -->
-          <a class="promo__button button link" href="form.html">Подобрать программу</a>
         </div>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png">
+          <img class="promo__img" src="img/index-promo-mobile.png" width="280" height="270" alt="Баночка с кормом">
+        </picture>
+        <a class="promo__button button link" href="form.html">Подобрать программу</a>
       </section>
 
-      <section class="programs wrapper">
+      <section class="programs">
         <h2 class="visually-hidden">Программы</h2>
         <ul class="programs__list">
           <li class="programs__item programs__item--weight-loss">
@@ -185,60 +192,60 @@
       </section>
 
       <section class="instance">
-        <!-- <div class="wrapper"> -->
-          <h2 class="instance__title title">Живой пример</h2>
-          <div class="instance__box">
-            <p class="instance__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
-              по-прежнему спит по 16 часов в день.
-            </p>
-            <dl class="instance__description-list">
-              <div class="instance__description-box">
-                <dt class="instance__term">5 кг</dt>
-                <dd class="instance__description">снижение веса</dd>
-              </div>
-              <div class="instance__description-box">
-                <dt class="instance__term">60 дней</dt>
-                <dd class="instance__description">затрачено времени</dd>
-              </div>
-            </dl>
-            <p class="instance__total">Затраты на питание:<span> 15 000 РУБ.</span></p>
-          </div>
-
-          <div class="instance-range">
-            <!-- <div class="instance-range__img-box">
-              <img class="instance-range__img instance-range__img--before" src="../img/before-mobile.png" width="311" height="232" alt="Кот до прохождения программы">
-              <img class="instance-range__img instance-range__img--after" src="../img/after-mobile.png" width="251" height="240" alt="Кот после прохождения программы">
-            </div> -->
-            <div class="instance-range__slider">
-              Было
-              <div class="instance-range__control">
-                <div class="instance-range__scale">
-                  <div class="instance-range__toggle"></div>
-                </div>
-              </div>
-              Стало
+        <h2 class="instance__title title">Живой пример</h2>
+        <div class="instance__box wrapper">
+          <p class="instance__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+            по-прежнему спит по 16 часов в день.
+          </p>
+          <dl class="instance__description-list">
+            <div class="instance__description-box">
+              <dt class="instance__term">5 кг</dt>
+              <dd class="instance__description">снижение веса</dd>
             </div>
+            <div class="instance__description-box">
+              <dt class="instance__term">60 дней</dt>
+              <dd class="instance__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="instance__total">
+            Затраты на питание:<span> 15 000 РУБ.</span>
+          </p>
+        </div>
+        <div class="instance__range range">
+          <div class="range__img-box">
+            <img class="range__img range__img--before" src="../img/before-mobile.png" width="267" height="232" alt="Кот до прохождения программы">
+            <img class="range__img range__img--after" src="../img/after-mobile.png" width="251" height="240" alt="Кот после прохождения программы">
           </div>
-        <!-- </div> -->
+          <div class="range__slider">
+            Было
+            <div class="range__control">
+              <div class="range__scale">
+                <div class="range__toggle"></div>
+              </div>
+            </div>
+            Стало
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="page__footer">
       <section class="map">
-        <div class="map__headline wrapper">
+        <div class="map__headline">
           <h2 class="visually-hidden">Карта</h2>
           <p class="map__invitation">Приглашаемк сотрудничеству дилеров!</p>
           <p class="map__adress">ул. БольшаяКонюшенная, д. 19/8Санкт-Петербург</p>
         </div>
-        <img class="map__img" src="img/map.jpg" width="320" height="362" alt="Карта">
+        <div class="map__inner"></div>
+        <!-- <img class="map__img" src="img/map.jpg" width="320" height="362" alt="Карта"> -->
       </section>
 
       <section class="footer-bottomline wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-bottomline__logo link" href="#page-header__logo">
-          <img class="link__icon" src="/img/logo/footer-logo.svg" width="128" height="24" alt="Логотип «Cat energy»">
+        <a class="footer-bottomline__logo link" href="#logo">
+          <img src="/img/logo/footer-logo.svg" width="128" height="24" alt="Логотип «Cat energy»">
         </a>
         <ul class="footer-bottomline__social-list social-list">
           <li class="social-list__item">
@@ -266,11 +273,11 @@
             </a>
           </li>
         </ul>
-        <p class="footer-bottomline__copyright">
-          <a class="footer-bottomline__copyright-link link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="footer-bottomline__copyright copyright">
+          <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
-          <a class="footer-bottomline__copyright-link-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
             </svg>
@@ -279,16 +286,16 @@
       </section>
     </footer>
     <script>
-      const navMain = document.querySelector('.main-nav');
-      const navToggle = document.querySelector('.main-nav__toggle');
+      const navMain = document.querySelector('.main-navigation');
+      const navToggle = document.querySelector('.main-navigation__toggle');
 
       navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.toggle('main-nav--closed');
-          navMain.classList.toggle('main-nav--opened');
+        if (navMain.classList.contains('main-navigation--closed')) {
+          navMain.classList.toggle('main-navigation--closed');
+          navMain.classList.toggle('main-navigation--opened');
         } else {
-          navMain.classList.toggle('main-nav--closed');
-          navMain.classList.toggle('main-nav--opened');
+          navMain.classList.toggle('main-navigation--closed');
+          navMain.classList.toggle('main-navigation--opened');
         }
       });
     </script>
